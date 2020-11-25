@@ -1,5 +1,5 @@
 <ion-content padding>
-  <h3>Store</h3>
+  <h1>Store</h1>
 
   <img src="assets/imgs/inicial.png" alt="logo">
 
@@ -9,10 +9,10 @@
       <ion-input type="text"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Senha</ion-label>
+      <ion-label>password</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-    <button ion-button block>Enviar</button>
+    <button ion-button block (click)="login()">Enviar</button>
   </form>
   <button ion-button block outline>Registrar</button>
 </ion-content>

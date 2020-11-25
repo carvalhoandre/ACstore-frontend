@@ -25696,7 +25696,7 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
-page-home h3 {
+page-home h1 {
   text-align: center;
 }
 
@@ -25707,5 +25707,5 @@ page-home img {
   align-self: center;
   margin: auto;
   display: block;
-  padding: 20px;
+  padding: 40px;
 }
