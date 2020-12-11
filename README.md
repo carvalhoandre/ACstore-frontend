@@ -1,9 +1,23 @@
 # store-frontend :convenience_store:
-###
-[Projeto full stack completo! Java Spring Boot no back end e Ionic no front end. Do design UML ao Heroku e Play Store!](https://www.udemy.com/course/spring-boot-ionic/)
 
-Front end utilizando Ionic. Explorando MVC do Angular, os componentes visuais do Ionic, Angular reactive forms, navegação, interceptors, local storage, tratamento de erros, acesso à câmera e galeria, paginação com infinite scroll, loading e refresher, processo de build para Android e publicação do app na Play Store.
 
-[Back-End](https://github.com/carvalhoandre/store-backend) _API desenvolvida em Java_
+_Aplicativo desenvolvido atráves do curso Java 11_
 
+Interface segundo [API](https://github.com/carvalhoandre/store-backend)
+
+## Utilizando: 
+- Ionic 
+- MVC do Angular
+- Componentes visuais do Ionic 
+- Angular reactive forms 
+- Interceptors
+
+## Implementações:
+- Storage tratamento de erros  
+- Acesso à câmera e galeria 
+- Paginação com infinite scroll 
+- Loading e refresher 
+- Processo de build para Android 
+- Publicação do app na Play Store.
+ 
 [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)
