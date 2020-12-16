@@ -2,7 +2,7 @@
 
 <img src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/img.png" min-width="400px" max-width="400px" width="400px" align="right" alt="interface">
 
-_Aplicativo em desenvolvimento atráves do curso Java 11_
+_Aplicativo em desenvolvimento através do curso Java 11_
 
 Interface segundo [API](https://github.com/carvalhoandre/store-backend)
 
