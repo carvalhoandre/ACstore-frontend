@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { IfObservable } from "rxjs/observable/IfObservable";
 import { STORAGE_KEYS } from "../config/storage_keys.config";
 import { LocalUser } from "../models/local_user";
 
