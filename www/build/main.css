@@ -25715,3 +25715,7 @@ page-profile .circle {
   border-radius: 100%;
   margin: 25px auto 0 auto;
 }
+
+page-signup .danger {
+  color: crimson;
+}
