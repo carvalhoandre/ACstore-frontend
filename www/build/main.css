@@ -25717,5 +25717,11 @@ page-profile .circle {
 }
 
 page-signup .danger {
-  color: crimson;
+  color: red;
+}
+
+page-signup h1 {
+  text-align: center;
+  color: darkgrey;
+  font-size: 10px;
 }
