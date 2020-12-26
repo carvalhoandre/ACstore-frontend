@@ -25717,11 +25717,17 @@ page-profile .circle {
 }
 
 page-signup .danger {
-  color: red;
+  color: crimson;
+  text-align: right;
 }
 
-page-signup h1 {
-  text-align: center;
+page-signup .title {
   color: darkgrey;
-  font-size: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+page-signup .option {
+  color: black;
+  font-size: 13px;
 }

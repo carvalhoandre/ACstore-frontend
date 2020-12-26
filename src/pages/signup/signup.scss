@@ -1,11 +1,17 @@
 page-signup {
     .danger {
-        color: red;
+        color: crimson;
+        text-align: right;
     }
 
-    h1{
-        text-align: center;
+    .title{
         color: darkgrey;
-        font-size: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .option{
+        color: black;
+        font-size: 13px;
     }
 }
