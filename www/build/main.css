@@ -25696,6 +25696,11 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
+page-cart .nolinebreak {
+  float: left;
+  padding-right: 10px;
+}
+
 page-home h1 {
   text-align: center;
 }

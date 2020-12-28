@@ -32,7 +32,7 @@ import { CartService } from '../services/domain/cart.service';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: ErrorHandler, useClass: IonicErrorHandler, useValue: "pt-BR" },
     CategoriaService,
     AuthInterceptorProvider,
     ErrorInterceptorProvider,
