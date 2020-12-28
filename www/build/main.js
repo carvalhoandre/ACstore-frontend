@@ -239,6 +239,10 @@ var ProdutoService = /** @class */ (function () {
     ProdutoService.prototype.findByCategoria = function (categoria_id) {
         return this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].baseUrl + "/produtos/?categorias=" + categoria_id);
     };
+    ProdutoService.prototype.getSmallImageFromBucket = function (id) {
+        var url = __WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].bucketBaseUrl + "/prod" + id + "-small.jpg";
+        return this.http.get(url, { responseType: 'blob' });
+    };
     ProdutoService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */]])
