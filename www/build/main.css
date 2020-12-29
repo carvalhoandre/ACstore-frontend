@@ -25740,6 +25740,10 @@ page-home img {
   padding: 40px;
 }
 
+page-produtos .text {
+  font-weight: bold;
+}
+
 page-profile .circle {
   width: 60%;
   border-radius: 100%;
