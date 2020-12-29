@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-fab top right edge>
+  <ion-fab bottom right>
     <button color="dark" navPush="CartPage" ion-fab mini><ion-icon name="cart"></ion-icon></button>
    </ion-fab>
   <ion-list>
@@ -16,7 +16,8 @@
       <ion-thumbnail item-start>
         <img src="{{bucketUrl}}/cat{{item.id}}.jpg">
       </ion-thumbnail>
-      <h2> {{ item.nome }} </h2>
+      <h2 class="text"> {{ item.nome }} </h2>
     </button>
   </ion-list>
+  <p class="carvalho">CarvalhoStore</p>
 </ion-content>

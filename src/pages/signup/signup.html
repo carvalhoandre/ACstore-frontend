@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Signup</ion-title>
+    <ion-title>Cadastro</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <p class="welcome">Seja Bem vindo(a)</p>
+  <p class="phrase">Para prosseguirmos precisamos das seguintes informações para Cadastro: </p>
   <form [formGroup]="formGroup" (ngSubmit)="signupUser(); $event.preventDefault()">
     <ion-list radio-group formControlName="tipo">
       <ion-list-header class="title">
-        Cliente
+        
       </ion-list-header>
       <ion-item>
         <ion-label class="option">Pessoa física</ion-label>
@@ -29,7 +31,7 @@
       <ion-input formControlName="nome" type="text"></ion-input>
     </ion-item>
     <p class="danger" *ngIf="formGroup.controls.nome.dirty && formGroup.controls.nome.errors" margin-left>Valor inválido</p>
-    <ion-label class="title">Login</ion-label>
+    <ion-label class="title">Crie informações de login:</ion-label>
     <ion-item>
       <ion-label stacked>Email*</ion-label>
       <ion-input formControlName="email" type="text"></ion-input>
@@ -40,7 +42,7 @@
       <ion-input formControlName="senha" type="password"></ion-input>
     </ion-item> 
     <p class="danger" *ngIf="formGroup.controls.senha.dirty && formGroup.controls.senha.errors" margin-left>min 8 caracteres</p>
-    <ion-label class="title">Endereço</ion-label>
+    <ion-label class="title">Onde irá receber as entregas:</ion-label>
     <ion-item>
       <ion-label stacked>Logradouro*</ion-label>
       <ion-input formControlName="logradouro" type="text"></ion-input>
@@ -76,7 +78,7 @@
         <ion-option *ngFor="let cidade of cidades" [value]="cidade.id">{{cidade.nome}}</ion-option>
       </ion-select>
     </ion-item>
-    <ion-label class="title">Contato</ion-label>
+    <ion-label class="title">Informções de contato</ion-label>
     <ion-item>
       <ion-label stacked>Celular*</ion-label>
       <ion-input formControlName="telefone1" type="text"></ion-input>
@@ -90,6 +92,9 @@
       <ion-label stacked>Outro</ion-label>
       <ion-input formControlName="telefone3" type="text"></ion-input>
     </ion-item>
-    <button color="dark" ion-button block type="submit" [disabled]="formGroup.invalid">Criar conta</button>
+    <ion-fab  bottom right>
+      <button button color="dark" type="submit" [disabled]="formGroup.invalid" ion-fab mini><ion-icon name="ios-person-add"></ion-icon></button>
+     </ion-fab>
   </form>
+  <p class="carvalho">CarvalhoStore</p>
 </ion-content>
