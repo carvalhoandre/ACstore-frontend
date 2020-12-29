@@ -25721,6 +25721,10 @@ page-profile .circle {
   margin: 25px auto 0 auto;
 }
 
+page-profile .text {
+  text-align: center;
+}
+
 page-signup .danger {
   color: crimson;
   text-align: right;

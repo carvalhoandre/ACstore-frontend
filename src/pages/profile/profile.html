@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Profile</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,6 +11,6 @@
   <ion-avatar>
     <img class="circle" [src]="cliente?.imageUrl || 'assets/imgs/avatar-blank.png'">
   </ion-avatar>
-  <h2 text-center>{{cliente?.nome}}</h2>
-  <p text-center>{{cliente?.email}}</p>
+  <h2 class="text">{{cliente?.nome}}</h2>
+  <p class="text">{{cliente?.email}}</p>
 </ion-content>

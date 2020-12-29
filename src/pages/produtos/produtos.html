@@ -1,3 +1,4 @@
+  
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
@@ -8,12 +9,17 @@
 </ion-header>
 
 <ion-content padding>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
   <ion-fab top right edge>
     <button color="dark" navPush="CartPage" ion-fab mini><ion-icon name="cart"></ion-icon></button>
-   </ion-fab>
+  </ion-fab>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="showDetail(item.id)">
-      <ion-thumbnail item start>
+      <ion-thumbnail item-start>
         <img [src]="item.imageUrl || 'assets/imgs/prod.png'">
       </ion-thumbnail>
       <h2>{{item.nome}}</h2>

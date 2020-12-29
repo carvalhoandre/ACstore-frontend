@@ -18,7 +18,7 @@
       <ion-icon class="nolinebreak" name="remove-circle" (click)="decreaseQuantity(item.produto)"></ion-icon>
       <p class="nolinebreak">{{item.quantidade}}</p>
       <ion-icon name="add-circle" (click)="increaseQuantity(item.produto)"></ion-icon>
-      <ion-icon name="trash" item-end  color="danger" (click)="removeItem(item.produto)"></ion-icon>
+      <ion-icon name="md-trash" item-end  color="danger" (click)="removeItem(item.produto)"></ion-icon>
     </ion-item>
     <ion-item *ngIf="total() > 0">
       <h1>Total</h1>

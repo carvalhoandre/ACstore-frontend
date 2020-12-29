@@ -3,25 +3,27 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>ProdutoDetail</ion-title>
+    <ion-title>{{item?.nome}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-fab top right edge>
-    <button color="dark" navPush="CartPage" ion-fab mini><ion-icon name="cart"></ion-icon></button>
+    <button color="dark" navPush="CartPage" ion-fab mini ><ion-icon name="cart"></ion-icon></button>
+   </ion-fab>
+   <ion-fab>
+    <button color="dark" navPush="CartPage" ion-fab mini ><ion-icon name="bag-add-outline"></ion-icon></button>
    </ion-fab>
   <ion-card>
     <img [src]="item?.imageUrl || 'assets/imgs/prod.png'">
     <ion-card-content>
       <ion-card-title>
-        {{item?.nome}}
+        {{item?.preco | currency:'BRL':2}}
       </ion-card-title>
       <p>
-        {{item?.preco | currency:'BRL':2}}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit aut deleniti laboriosam error voluptatem asperiores distinctio incidunt dolore dolor et illo accusantium assumenda mollitia cum nesciunt consequatur, voluptates voluptate.
       </p>
     </ion-card-content>
-  </ion-card>
-
+  </ion-card>    
   <button color="dark" ion-button block outline (click)="addToCart(item)">Adicionar ao carrinho</button>
 </ion-content>
