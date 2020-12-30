@@ -3,11 +3,12 @@
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>    
-    <ion-title>Carrinho</ion-title>
+    <ion-title>Sacola</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  
   <ion-list>
     <ion-item *ngFor="let item of items">
       <ion-thumbnail item-start>
@@ -26,9 +27,11 @@
     </ion-item>
     <ion-item class="img" *ngIf="total() <= 0">
       <img src="assets/imgs/null.png" alt="imgcore">
-      <h1 class="text">Carrinho vazio</h1>
+      <h1 class="text">Sacola vazia</h1>
     </ion-item>
-  </ion-list> 
+  </ion-list>
+  <ion-fab bottom right>
+    <button *ngIf="total() > 0" color="secondary" (click)="checkout()" ion-fab mini><ion-icon name="ios-arrow-dropright"></ion-icon></button>
+   </ion-fab>
   <button color="dark" ion-button block (click)="goOn()">Continuar comprando</button>   
-  <button *ngIf="total() > 0" ion-button block color="secondary" (click)="checkout()">Finalizar Compra</button>   
 </ion-content>

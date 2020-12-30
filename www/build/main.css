@@ -25720,8 +25720,8 @@ page-categorias .text {
   font-weight: bold;
 }
 
-page-categorias .carvalho {
-  text-align: right;
+page-categorias .store {
+  text-align: left;
   font-size: 15px;
   font-weight: bold;
 }
@@ -25740,8 +25740,27 @@ page-home img {
   padding: 40px;
 }
 
+page-payment .text {
+  font-size: 15px;
+  text-align: center;
+}
+
+page-payment .information {
+  font-size: 15px;
+}
+
+page-pick-address .text {
+  font-size: 15px;
+  text-align: center;
+}
+
+page-produto-detail desc {
+  text-transform: uppercase;
+}
+
 page-produtos .text {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 page-profile .circle {
@@ -25752,6 +25771,12 @@ page-profile .circle {
 
 page-profile .text {
   text-align: center;
+}
+
+page-profile .store {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 page-signup .danger {
@@ -25776,7 +25801,7 @@ page-signup .phrase {
   font-weight: bold;
 }
 
-page-signup .carvalho {
+page-signup .store {
   text-align: right;
   font-size: 15px;
   font-weight: bold;

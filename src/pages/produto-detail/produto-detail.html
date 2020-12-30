@@ -12,7 +12,7 @@
     <button color="dark" navPush="CartPage" ion-fab mini ><ion-icon name="cart"></ion-icon></button>
    </ion-fab>
    <ion-fab bottom edg>
-    <button color="dark" (click)="addToCart(item)" ion-fab mini><ion-icon name="ios-add"></ion-icon></button>
+    <button color="secondary" (click)="addToCart(item)" ion-fab mini><ion-icon name="ios-add"></ion-icon></button>
    </ion-fab>
   <ion-card>
     <img [src]="item?.imageUrl || 'assets/imgs/prod.png'">
@@ -20,7 +20,7 @@
       <ion-card-title>
         {{item?.preco | currency:'BRL':2}}
       </ion-card-title>
-      <p>
+      <p class="desc">
        {{item?.descricao}}
       </p>
     </ion-card-content>

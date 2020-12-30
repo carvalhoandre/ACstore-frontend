@@ -11,25 +11,30 @@
 
   <form [formGroup]="formGroup" (ngSubmit)="nextPage(); $event.preventDefault()">
     <ion-list radio-group formControlName="@type">
-      <ion-list-header>
-        Tipo de Pagamento
-      </ion-list-header>
+      <p class="text">Nós da <strong>Store</strong> oferecemos a você seguintes formas de pagamento no momento:</p>
       <ion-item>
-        <ion-label>Pagamento com cartão</ion-label>
+        <ion-label>Cartão <img src="assets/imgs/card.png" alt="logo"></ion-label>
         <ion-radio checked="true" value="pagamentoComCartao"></ion-radio>
       </ion-item>
+      <p class="information"><strong>Debido</strong></p>
+      <p class="information"><strong>Crédito</strong> com opções de parcelas a sua escolha.</p>
+      <ion-item *ngIf="formGroup.value['@type'] == 'pagamentoComCartao'">
+        <ion-label stacked><p  class="information">
+          Quantas vezes dejesa parcelar?
+        </p></ion-label> 
+        <ion-select formControlName="numeroDeParcelas">
+          <ion-option *ngFor="let n of parcelas; first as f" [value]="n" [selected]="f">{{n}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <img src="assets/imgs/mastercard_logo.png" alt="logo">
       <ion-item>
-        <ion-label>Pagamento com Boleto</ion-label>
+        <ion-label>Boleto <img src="assets/imgs/barcode.png" alt="logo"></ion-label>
         <ion-radio value="pagamentoComBoleto"></ion-radio>
       </ion-item>
+      <p class="information">Pague a vista e ganhe desconto no total de suas compras</p>
     </ion-list>
-
-    <ion-item *ngIf="formGroup.value['@type'] == 'pagamentoComCartao'">
-      <ion-label stacked>Parcelas no boleto</ion-label> 
-      <ion-select formControlName="numeroDeParcelas">
-        <ion-option *ngFor="let n of parcelas; first as f" [value]="n" [selected]="f">{{n}}</ion-option>
-      </ion-select>
-    </ion-item>
-    <button ion-button block type="submit"  [disabled]="formGroup.invalid">Próximo</button>
+    <ion-fab bottom right>
+      <button color="secondary" type="submit"  [disabled]="formGroup.invalid" ion-fab mini><ion-icon name="ios-arrow-dropright"></ion-icon></button>
+  </ion-fab>
   </form>
 </ion-content>
