@@ -12,7 +12,7 @@ export class PaymentPage {
 
   pedido: PedidoDTO;
 
-  parcelas: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  parcelas: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   formGroup: FormGroup;
 
@@ -25,13 +25,12 @@ export class PaymentPage {
 
     this.formGroup = this.formBuilder.group({
       numeroDeParcelas: [1, Validators.required],
-      "@type":["pagamentoComCartao", Validators.required]
-    })
+      "@type": ["pagamentoComCartao", Validators.required]
+    });
   }
 
-  nextPage(){
+  nextPage() {
     this.pedido.pagamento = this.formGroup.value;
-    console.log(this.pedido);
+    this.navCtrl.setRoot('OrderConfirmationPage', {pedido: this.pedido});
   }
-
 }

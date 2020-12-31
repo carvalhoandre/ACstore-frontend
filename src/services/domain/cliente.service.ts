@@ -16,7 +16,7 @@ export class ClienteService {
         return this.http.get(`${API_CONFIG.baseUrl}/clientes/email?value=${email}`);
     }
 
-    findById(id : string) {
+    findById(id: string) {
         return this.http.get(`${API_CONFIG.baseUrl}/clientes/${id}`);
     }
 
