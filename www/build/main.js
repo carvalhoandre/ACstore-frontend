@@ -197,15 +197,15 @@ var map = {
 		7
 	],
 	"../pages/order-confirmation/order-confirmation.module": [
-		686,
+		688,
 		1
 	],
 	"../pages/payment/payment.module": [
-		687,
+		686,
 		6
 	],
 	"../pages/pick-address/pick-address.module": [
-		688,
+		687,
 		5
 	],
 	"../pages/produto-detail/produto-detail.module": [
@@ -322,8 +322,10 @@ var ProdutoService = /** @class */ (function () {
     ProdutoService.prototype.findById = function (produto_id) {
         return this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].baseUrl + "/produtos/" + produto_id);
     };
-    ProdutoService.prototype.findByCategoria = function (categoria_id) {
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].baseUrl + "/produtos/?categorias=" + categoria_id);
+    ProdutoService.prototype.findByCategoria = function (categoria_id, page, linesPerPage) {
+        if (page === void 0) { page = 0; }
+        if (linesPerPage === void 0) { linesPerPage = 24; }
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].baseUrl + "/produtos/?categorias=" + categoria_id + "&page=" + page + "&linesPerPage=" + linesPerPage);
     };
     ProdutoService.prototype.getSmallImageFromBucket = function (id) {
         var url = __WEBPACK_IMPORTED_MODULE_2__config_api_config__["a" /* API_CONFIG */].bucketBaseUrl + "/prod" + id + "-small.jpg";
@@ -453,9 +455,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categorias/categorias.module#CategoriasPageModule', name: 'CategoriasPage', segment: 'categorias', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment/payment.module#PaymentPageModule', name: 'PaymentPage', segment: 'payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pick-address/pick-address.module#PickAddressPageModule', name: 'PickAddressPage', segment: 'pick-address', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produto-detail/produto-detail.module#ProdutoDetailPageModule', name: 'ProdutoDetailPage', segment: 'produto-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
