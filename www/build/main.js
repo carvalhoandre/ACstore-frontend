@@ -198,30 +198,30 @@ var map = {
 	],
 	"../pages/order-confirmation/order-confirmation.module": [
 		686,
-		6
+		1
 	],
 	"../pages/payment/payment.module": [
 		687,
-		5
+		6
 	],
 	"../pages/pick-address/pick-address.module": [
 		688,
-		4
+		5
 	],
 	"../pages/produto-detail/produto-detail.module": [
 		689,
-		3
+		4
 	],
 	"../pages/produtos/produtos.module": [
 		690,
-		2
+		3
 	],
 	"../pages/profile/profile.module": [
-		691,
-		1
+		692,
+		2
 	],
 	"../pages/signup/signup.module": [
-		692,
+		691,
 		0
 	]
 };
@@ -458,8 +458,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/pick-address/pick-address.module#PickAddressPageModule', name: 'PickAddressPage', segment: 'pick-address', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produto-detail/produto-detail.module#ProdutoDetailPageModule', name: 'ProdutoDetailPage', segment: 'produto-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
