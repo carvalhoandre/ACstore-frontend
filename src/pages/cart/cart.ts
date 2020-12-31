@@ -22,10 +22,13 @@ export class CartPage {
   }
 
   ionViewDidLoad() {
+    this.loadData();
+  }
+
+  loadData(){
     let cart = this.cartService.getCart();
     this.items = cart.items;
     this.loadImageUrls();
-
   }
 
   loadImageUrls(){
@@ -61,5 +64,12 @@ export class CartPage {
 
   checkout(){
     this.navCtrl.push('PickAddressPage')
+  }
+
+  doRefresh(refresher){
+    this.loadData();
+    setTimeout(() => {
+      refresher.complete();
+    }, 1000);
   }
 }

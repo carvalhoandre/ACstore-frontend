@@ -189,15 +189,15 @@ var map = {
 		9
 	],
 	"../pages/categorias/categorias.module": [
-		685,
+		684,
 		8
 	],
 	"../pages/home/home.module": [
-		684,
+		685,
 		7
 	],
 	"../pages/order-confirmation/order-confirmation.module": [
-		692,
+		686,
 		1
 	],
 	"../pages/payment/payment.module": [
@@ -209,19 +209,19 @@ var map = {
 		5
 	],
 	"../pages/produto-detail/produto-detail.module": [
-		686,
+		689,
 		4
 	],
 	"../pages/produtos/produtos.module": [
-		690,
+		691,
 		3
 	],
 	"../pages/profile/profile.module": [
-		689,
+		690,
 		2
 	],
 	"../pages/signup/signup.module": [
-		691,
+		692,
 		0
 	]
 };
@@ -344,7 +344,7 @@ var ProdutoService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 353:
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -408,7 +408,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(677);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_domain_categoria_service__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_domain_categoria_service__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__interceptors_error_interceptor__ = __webpack_require__(681);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_auth_service__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_storage_service__ = __webpack_require__(43);
@@ -451,15 +451,15 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categorias/categorias.module#CategoriasPageModule', name: 'CategoriasPage', segment: 'categorias', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/produto-detail/produto-detail.module#ProdutoDetailPageModule', name: 'ProdutoDetailPage', segment: 'produto-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment/payment.module#PaymentPageModule', name: 'PaymentPage', segment: 'payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pick-address/pick-address.module#PickAddressPageModule', name: 'PickAddressPage', segment: 'pick-address', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/produto-detail/produto-detail.module#ProdutoDetailPageModule', name: 'ProdutoDetailPage', segment: 'produto-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
