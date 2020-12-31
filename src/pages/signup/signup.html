@@ -31,7 +31,7 @@
       <ion-input formControlName="nome" type="text"></ion-input>
     </ion-item>
     <p class="danger" *ngIf="formGroup.controls.nome.dirty && formGroup.controls.nome.errors" margin-left>Valor inválido</p>
-    <ion-label class="title">Crie informações de login:</ion-label>
+    <ion-label class="title"><strong>Crie informações de login</strong> <img src="assets/imgs/password.png" alt="logo"></ion-label>
     <ion-item>
       <ion-label stacked>Email*</ion-label>
       <ion-input formControlName="email" type="text"></ion-input>
@@ -42,7 +42,8 @@
       <ion-input formControlName="senha" type="password"></ion-input>
     </ion-item> 
     <p class="danger" *ngIf="formGroup.controls.senha.dirty && formGroup.controls.senha.errors" margin-left>min 8 caracteres</p>
-    <ion-label class="title">Onde irá receber as entregas:</ion-label>
+
+    <ion-label class="title"><strong>Onde podemos realizar suas entregas</strong><img  src="assets/imgs/address.png" alt="logo"></ion-label>
     <ion-item>
       <ion-label stacked>Logradouro*</ion-label>
       <ion-input formControlName="logradouro" type="text"></ion-input>
@@ -78,7 +79,8 @@
         <ion-option *ngFor="let cidade of cidades" [value]="cidade.id">{{cidade.nome}}</ion-option>
       </ion-select>
     </ion-item>
-    <ion-label class="title">Informções de contato</ion-label>
+    
+    <ion-label class="title"><strong>Informções de contato</strong> <img src="assets/imgs/contact.png" alt="logo"></ion-label>
     <ion-item>
       <ion-label stacked>Celular*</ion-label>
       <ion-input formControlName="telefone1" type="text"></ion-input>
@@ -92,7 +94,7 @@
       <ion-label stacked>Outro</ion-label>
       <ion-input formControlName="telefone3" type="text"></ion-input>
     </ion-item>
-    <ion-fab  bottom right>
+    <ion-fab  right edge>
       <button button color="dark" type="submit" [disabled]="formGroup.invalid" ion-fab mini><ion-icon name="ios-person-add"></ion-icon></button>
      </ion-fab>
   </form>

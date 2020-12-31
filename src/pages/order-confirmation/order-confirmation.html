@@ -3,52 +3,45 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title *ngIf="!codpedido">Confira seu pedido</ion-title>
-    <ion-title *ngIf="codpedido">Pedido Registrado</ion-title>
+    <ion-title *ngIf="!codpedido">Confirmação do Pedido</ion-title>
+    <ion-title *ngIf="codpedido">Pedido Realizado</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
   <div *ngIf="!codpedido">
+    <p>Para finalizar sua compra, porfavor, nos confirme:</p>
+    <h1>Itens do seu pedido <img  src="assets/imgs/check.png" alt="logo"></h1> 
     <ion-card>
-      <ion-card-header>
-        Itens do pedido
-      </ion-card-header>
-
       <ion-list>
         <ion-item *ngFor="let item of cartItems">
           <ion-thumbnail item-start>
-            <img [src]="item.produto.imageUrl || 'assets/imgs/prod.jpg'">
+            <img [src]="item.produto.imageUrl || 'assets/imgs/prod.png'">
           </ion-thumbnail>
           <h2>{{item.produto.nome}}</h2>
-          <p>{{item.produto.preco | currency}}</p>
+          <p>{{item.produto.preco | currency:'BRL':2}}</p>
           <p class="nolinebreak">{{item.quantidade}}</p>
-          <p item-end>{{item.produto.preco * item.quantidade | currency}}</p>
+          <p item-end>{{item.produto.preco * item.quantidade | currency:'BRL':2}}</p>
         </ion-item> 
 
         <ion-item>
-          <h2>Total</h2>
-          <h2 item-end>{{total() | currency}}</h2>
+          <h2 class="information">Total</h2>
+          <h2 item-end>{{total() | currency:'BRL':2}}</h2>
         </ion-item>
       </ion-list> 
     </ion-card>
 
+    <h1>Seus dados <img  src="assets/imgs/user.png" alt="logo"></h1>
     <ion-card>
-        <ion-card-header>
-          Cliente
-        </ion-card-header>
         <ion-item>
           <h2>{{cliente?.nome}}</h2>
           <p>{{cliente?.email}}</p>
         </ion-item>
     </ion-card>
 
+    <h1>Endereço de entrega <img  src="assets/imgs/address.png" alt="logo"></h1>
     <ion-card>
-      <ion-card-header>
-        Endereço de entrega
-      </ion-card-header>
-
       <ion-item>
         <h2>{{endereco?.logradouro}}, {{endereco?.numero}}</h2>
         <p>{{endereco?.complemento}} {{endereco?.bairro}} CEP {{endereco?.cep}}</p>
@@ -56,11 +49,10 @@
       </ion-item>
     </ion-card>
 
+    <h1>Pagamento <img  src="assets/imgs/cash.png" alt="logo"></h1>
+    <img *ngIf="pedido.pagamento['@type']=='pagamentoComCartao'" src="assets/imgs/card.png" alt="logo">
+    <img *ngIf="pedido.pagamento['@type']=='pagamentoComBoleto'" src="assets/imgs/barcode.png" alt="logo">
     <ion-card>
-      <ion-card-header>
-        Pagamento
-      </ion-card-header>
-
       <ion-item *ngIf="pedido.pagamento['@type']=='pagamentoComCartao'">
         <h3>Pagamento com cartão</h3>
         <p>Parcelas: {{pedido.pagamento.numeroDeParcelas}}</p>
@@ -70,20 +62,29 @@
       </ion-item>
     </ion-card>
 
-    <button ion-button block (click)="checkout()">Confirmar pedido</button>
-    <button ion-button block outline (click)="back()">Voltar</button>
+    <ion-fab right edge>
+      <button color="secondary" (click)="checkout()" ion-fab mini><ion-icon name="md-done-all"></ion-icon></button>
+     </ion-fab>
+     <ion-fab left edg>
+      <button color="dark" (click)="back()" ion-fab mini><ion-icon name="ios-arrow-dropleft"></ion-icon></button>
+     </ion-fab>
   </div>
 
   <div *ngIf="codpedido">
+    <img class= "displayed"  src="assets/imgs/approval.png" alt="logo">
+    <h1>Seu pedido foi realizado com sucesso!</h1>
+    <p class= "sucess">Acabamos de enviar um e-mail para: <strong>{{cliente?.email}}</strong> com todas as informações necessárias </p>
     <ion-card>
-      <ion-card-header>
-        Seu pedido foi realizado!
-      </ion-card-header>
       <ion-item>
-        <h2>Código do pedido: {{codpedido}}</h2>
-        <p>Verifique seu e-mail</p>
+        <h2 class= "sucess">Código do pedido: <strong>{{codpedido}}</strong></h2>
+        <p class= "sucess">30 dias para troca do produto.</p>
+        <p class= "sucess">Prazo de entrega de 5 á 7 dias úteis</p>
       </ion-item>
     </ion-card>
-    <button ion-button block outline (click)="home()">Voltar</button>
+    <p class="sucess">Nós da <strong>Store</strong> agradecemos a preferência</p>
+    <img  src="assets/imgs/signature.png" alt="logo">
+    <ion-fab right edge>
+      <button color="dark" (click)="home()" ion-fab mini><ion-icon name="ios-arrow-dropleft"></ion-icon></button>
+     </ion-fab>
   </div>
 </ion-content>
