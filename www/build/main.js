@@ -163,7 +163,7 @@ var AuthService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -176,11 +176,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 165;
+webpackEmptyAsyncContext.id = 166;
 
 /***/ }),
 
-/***/ 210:
+/***/ 211:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -197,15 +197,15 @@ var map = {
 		7
 	],
 	"../pages/order-confirmation/order-confirmation.module": [
-		688,
+		686,
 		1
 	],
 	"../pages/payment/payment.module": [
-		686,
+		687,
 		6
 	],
 	"../pages/pick-address/pick-address.module": [
-		687,
+		688,
 		5
 	],
 	"../pages/produto-detail/produto-detail.module": [
@@ -213,11 +213,11 @@ var map = {
 		4
 	],
 	"../pages/produtos/produtos.module": [
-		691,
+		690,
 		3
 	],
 	"../pages/profile/profile.module": [
-		690,
+		691,
 		2
 	],
 	"../pages/signup/signup.module": [
@@ -236,7 +236,7 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 210;
+webpackAsyncContext.id = 211;
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -407,8 +407,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_domain_categoria_service__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__interceptors_error_interceptor__ = __webpack_require__(681);
@@ -455,12 +455,12 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categorias/categorias.module#CategoriasPageModule', name: 'CategoriasPage', segment: 'categorias', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment/payment.module#PaymentPageModule', name: 'PaymentPage', segment: 'payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pick-address/pick-address.module#PickAddressPageModule', name: 'PickAddressPage', segment: 'pick-address', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/order-confirmation/order-confirmation.module#OrderConfirmationPageModule', name: 'OrderConfirmationPage', segment: 'order-confirmation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produto-detail/produto-detail.module#ProdutoDetailPageModule', name: 'ProdutoDetailPage', segment: 'produto-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -579,14 +579,14 @@ var API_CONFIG = {
 
 /***/ }),
 
-/***/ 677:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth_service__ = __webpack_require__(154);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -666,7 +666,7 @@ var MyApp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular_components_alert_alert_controller__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_storage_service__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
