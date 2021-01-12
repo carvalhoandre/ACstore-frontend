@@ -25740,6 +25740,12 @@ page-home img {
   padding: 40px;
 }
 
+page-home .store {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 page-order-confirmation .information {
   text-align: right;
   font-size: 16px;
