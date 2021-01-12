@@ -1,5 +1,7 @@
 # store-frontend :convenience_store:
 
+_Em desenvolvimento_
+
 <img src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/img.png" min-width="400px" max-width="400px" width="400px" align="right" alt="interface">
 
 _Aplicativo em desenvolvimento através do curso Java 11_
@@ -19,6 +21,11 @@ Interface segundo [API](https://github.com/carvalhoandre/store-backend)
 - Paginação com infinite scroll 
 - Loading e refresher 
 - Processo de build para Android 
-- Publicação do app na Play Store.
- 
-[Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)
+- Publicação do app na Play Store
+
+## Desenvolvendo melhorias:
+- [ ] Personalização continua través dos arquivos SCSS
+- [ ] Nova home
+
+#
+_Referência: [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)_
