@@ -25776,6 +25776,12 @@ page-payment .information {
   font-size: 15px;
 }
 
+page-payment h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #08abdd;
+}
+
 page-pick-address .text {
   font-size: 15px;
   text-align: center;
