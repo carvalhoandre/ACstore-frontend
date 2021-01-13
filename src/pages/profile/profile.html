@@ -32,4 +32,8 @@
     <button *ngIf=picture color="danger" (click)="cancel()" ion-fab mini><ion-icon name="ios-undo-outline"></ion-icon></button>
   </ion-fab>
 
+  <ion-fab bottom center>
+    <button color="dark" (click)="getGalleryPicture()" [disabled]="cameraOn" ion-fab mini><ion-icon name="ios-videocam-outline"></ion-icon></button>
+  </ion-fab>
+
 </ion-content>

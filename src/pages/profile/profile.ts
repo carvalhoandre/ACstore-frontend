@@ -18,7 +18,7 @@ export class ProfilePage {
   cameraOn: boolean = false;
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public storage: StorageService,
     public clienteService : ClienteService,
@@ -69,6 +69,25 @@ export class ProfilePage {
       return loader;
     }
 
+    getGaleryPicture(){
+
+      this.cameraOn = true;
+
+      const options: CameraOptions = {
+        quality: 100,
+        sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.PNG,
+        mediaType: this.camera.MediaType.PICTURE
+      }
+
+      this.camera.getPicture(options).then((imageData) => {
+       this.picture = 'data:image/png;base64,' + imageData;
+       this.cameraOn = false;
+      }, (err) => {
+      });
+    }
+
     getCameraPicture(){
 
       this.cameraOn = true;
@@ -79,7 +98,7 @@ export class ProfilePage {
         encodingType: this.camera.EncodingType.PNG,
         mediaType: this.camera.MediaType.PICTURE
       }
-      
+
       this.camera.getPicture(options).then((imageData) => {
        this.picture = 'data:image/png;base64,' + imageData;
        this.cameraOn = false;
