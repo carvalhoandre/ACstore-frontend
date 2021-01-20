@@ -1,12 +1,12 @@
 # store-frontend :convenience_store:
 
 <img 
-    src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/img.png"
+    src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/ped.png"
     min-width="250" 
     max-width="250" 
-    width="200" 
+    width="220" 
     align="right" 
-    alt="Logo_andre">
+    alt="img product">
     
     
 _Aplicativo desenvolvido através do curso Java 11_
@@ -29,9 +29,9 @@ _Aplicativo desenvolvido através do curso Java 11_
 
 <img 
     src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/cert.png"
-    min-width="150" 
-    max-width="150" 
-    width="200" 
+    min-width="250" 
+    max-width="250" 
+    width="240" 
     align="right" 
     alt="Logo_andre">
     
