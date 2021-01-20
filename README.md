@@ -8,16 +8,8 @@
     align="right" 
     alt="Logo_andre">
     
-<img 
-    src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/ped.png"
-    min-width="150" 
-    max-width="150" 
-    width="200" 
-    align="right" 
-    alt="Logo_andre">
-
     
-_Aplicativo em desenvolvimento através do curso Java 11_
+_Aplicativo desenvolvido através do curso Java 11_
 [API](https://github.com/carvalhoandre/store-backend)
 
 ## Utilizando: 
@@ -48,6 +40,7 @@ _Aplicativo em desenvolvimento através do curso Java 11_
 ## Desenvolvendo melhorias:
 - [ ] Personalização continua través dos arquivos SCSS
 - [ ] Nova home
+- [ ] Publicação PlayStore
 
 #
 _Referência: [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)_
