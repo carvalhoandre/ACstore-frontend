@@ -104,8 +104,8 @@ export declare class NgIf {
     private _elseViewRef;
     constructor(_viewContainer: ViewContainerRef, templateRef: TemplateRef<NgIfContext>);
     ngIf: any;
-    ngIfThen: TemplateRef<NgIfContext> | null;
-    ngIfElse: TemplateRef<NgIfContext> | null;
+    ngIfThen: TemplateRef<NgIfContext>;
+    ngIfElse: TemplateRef<NgIfContext>;
     private _updateView();
 }
 /**
