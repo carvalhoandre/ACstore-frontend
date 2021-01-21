@@ -11,8 +11,8 @@
 <ion-content padding>
 
   <div *ngIf="!codpedido">
-    <p>Para finalizar sua compra, porfavor, nos confirme:</p>
-    <h1>Itens do seu pedido <img  src="assets/imgs/check.png" alt="logo"></h1> 
+    <p>Para finalizar sua compra, por favor, nos confirme:</p>
+    <h1>Itens do seu pedido <img  src="assets/imgs/check.png" alt="logo"></h1>
     <ion-card>
       <ion-list>
         <ion-item *ngFor="let item of cartItems">
@@ -23,13 +23,13 @@
           <p>{{item.produto.preco | currency:'BRL':2}}</p>
           <p class="nolinebreak">{{item.quantidade}}</p>
           <p item-end>{{item.produto.preco * item.quantidade | currency:'BRL':2}}</p>
-        </ion-item> 
+        </ion-item>
 
         <ion-item>
           <h2 class="information">Total</h2>
           <h2 item-end>{{total() | currency:'BRL':2}}</h2>
         </ion-item>
-      </ion-list> 
+      </ion-list>
     </ion-card>
 
     <h1>Seus dados <img  src="assets/imgs/user.png" alt="logo"></h1>
