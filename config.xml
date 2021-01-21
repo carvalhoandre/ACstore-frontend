@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.nelioalves.cursospringbootionic" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.andrecarvalho.acstore" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>AC Store</name>
-    <description>Aplicação de modelo</description>
-    <author email="educandowebemail@gmail.com" href="https://github.com/carvalhoandre">André Carvalho</author>
+    <description>Aplicação de demonstração</description>
+    <author email="carvalho.devel@gmail.com" href="https://github.com/carvalhoandre">Andre Carvalho</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
