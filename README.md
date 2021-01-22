@@ -12,14 +12,14 @@
 _Aplicativo desenvolvido através do curso Java 11_
 [API](https://github.com/carvalhoandre/store-backend)
 
-## Utilizando: 
+## Utilizando
 - Ionic 
 - MVC do Angular
 - Componentes visuais do Ionic 
 - Angular reactive forms 
 - Interceptors
 
-## Implementações:
+## Implementações
 - Storage tratamento de erros  
 - Acesso à câmera e galeria 
 - Paginação com infinite scroll 
@@ -37,7 +37,7 @@ _Aplicativo desenvolvido através do curso Java 11_
     
     
 
-## Desenvolvendo melhorias:
+## Desenvolvendo melhorias
 - [ ] Personalização continua través dos arquivos SCSS
 - [ ] Nova home
 - [ ] Publicação PlayStore
