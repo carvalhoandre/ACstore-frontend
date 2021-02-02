@@ -16,12 +16,12 @@
 
 <img 
     src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/ped.png"
-    min-width="250" 
-    max-width="250" 
-    width="220" 
-    align="left" 
+    min-width="125" 
+    max-width="125" 
+    width="250" 
+    align="right" 
     alt="img product">  
-
+    
 ## Implementações
 - Storage tratamento de erros  
 - Acesso à câmera e galeria 
@@ -33,18 +33,19 @@
 ## Confira
 [API](https://github.com/carvalhoandre/store-backend)
 
-<img 
-    src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/cert.png"
-    min-width="250" 
-    max-width="250" 
-    width="240" 
-    align="left" 
-    alt="Logo_andre">
 
 ## Desenvolvendo melhorias
 - [ ] Personalização continua través dos arquivos SCSS
 - [ ] Nova home
 - [ ] Publicação PlayStore
+
+<img 
+    src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/cert.png"
+    min-width="125" 
+    max-width="125" 
+    width="250" 
+    align="right" 
+    alt="Logo_andre">
 
 #
 _Referência: [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)_
