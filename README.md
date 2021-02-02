@@ -34,12 +34,6 @@
 ## Confira
 [API](https://github.com/carvalhoandre/store-backend)
 
-
-## Desenvolvendo melhorias
-- [ ] Personalização continua través dos arquivos SCSS
-- [ ] Nova home
-- [ ] Publicação PlayStore
-
 <img 
     src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/cert.png"
     min-width="125" 
@@ -47,6 +41,11 @@
     width="250" 
     align="right" 
     alt="Logo_andre">
+
+## Desenvolvendo melhorias
+- [ ] Personalização continua través dos arquivos SCSS
+- [ ] Nova home
+- [ ] Publicação PlayStore
 
 #
 _Referência: [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)_
