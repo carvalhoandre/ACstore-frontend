@@ -7,13 +7,6 @@
   <img src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white">
 </p>
 
-## Utilizando
-- Ionic 
-- MVC do Angular
-- Componentes visuais do Ionic 
-- Angular reactive forms 
-- Interceptors
-
 <img 
     src="https://github.com/carvalhoandre/store-frontend/blob/main/imgReadme/ped.png"
     min-width="125" 
@@ -21,6 +14,14 @@
     width="250" 
     align="right" 
     alt="img product">  
+    
+## Utilizando
+- Ionic 
+- MVC do Angular
+- Componentes visuais do Ionic 
+- Angular reactive forms 
+- Interceptors
+
     
 ## Implementações
 - Storage tratamento de erros  
