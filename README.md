@@ -77,7 +77,7 @@ ionic cordova run browser
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
   <img src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white">
   <p>• Imagens utilizadas no projeto são de lincenças livres conforme <a href="https://github.com/carvalhoandre/store-frontend" target="_blank" rel="external"><em>Pexels</em></a></p>
-  <p>• <a href="https://github.com/carvalhoandre/store-frontend" target="_blank" rel="external">API</a></p>
+  <p>• <a href="https://github.com/carvalhoandre/store-backend" target="_blank" rel="external">API</a></p>
 </a> 
 
 ### :blush: Autor
