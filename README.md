@@ -38,7 +38,7 @@ npm install -g ionic@3.19.0 cordova@7.1.0
   
 <a>  
   <h2>:rocket: Rodar a aplicação/testes</h2>
-  <p>Clone repositório</p>
+  <p>• Clone repositório executando:</p>
 </a>
 
 
@@ -68,7 +68,7 @@ ionic cordova platform add android --save
 ionic cordova run browser
 ```
 
-<p>E bem vindo ao AC Store! </p>
+<p>• E bem vindo ao <strong>AC Store!</strong>:heart_eyes:</p>
 
 <a name="tecnologias" align="left">
   <h2>🛠 Tecnologias utilizadas</h2>
@@ -76,7 +76,8 @@ ionic cordova run browser
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
   <img src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white">
-  <p>Imagens utilizadas no projeto são de lincenças livres conforme <a href="https://github.com/carvalhoandre/store-frontend" target="_blank" rel="external"><em>Pexels</em></a></p>
+  <p>• Imagens utilizadas no projeto são de lincenças livres conforme <a href="https://github.com/carvalhoandre/store-frontend" target="_blank" rel="external"><em>Pexels</em></a></p>
+  <p>• <a href="https://github.com/carvalhoandre/store-frontend" target="_blank" rel="external">API</a></p>
 </a> 
 
 ### :blush: Autor
