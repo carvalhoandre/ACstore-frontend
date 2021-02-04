@@ -1,5 +1,5 @@
 <img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner.png" align="center">
-<p>Aplicativo IONIC de comparas</p>
+<p align="center">Aplicativo IONIC de compras</p>
 
 <p align="center">
  •<a href="#recursos">Recursos</a>
