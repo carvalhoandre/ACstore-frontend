@@ -1,6 +1,8 @@
 <img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner.png" align="center">
 <p align="center">Aplicativo IONIC de compras</p>
 
+<p align="center">AC Store modelo de negócio para que pequenos empreendedores tenham a própria loja online</p>
+
 <p align="center">
  •<a href="#recursos">Recursos</a>
  •<a href="#requisitos">Pré-requisitos e como rodar a aplicação/testes</a>
@@ -23,7 +25,9 @@
       <p>:black_square_button: Publicação do app na Play Store</p>
 </a>
 
-<img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner4.png" alt="banne2">
+<a href="https://acstore.netlify.app/" target="_external"><img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner4.png" alt="banner2"></a>
+
+<p align="center">Clique no banner e conheça projeto :point_up_2:</p>
 
 <a name="requisitos">
   <h2>🎲Pré-requisitos</h2>
@@ -76,8 +80,8 @@ ionic cordova run browser
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
   <img src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white">
-  <p>• Imagens utilizadas no projeto são de lincenças livres conforme <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external"><em>Pexels</em></a></p>
-  <p>• <a href="https://github.com/carvalhoandre/store-backend" target="_blank" rel="external">API</a></p>
+  <p>• Imagens utilizadas no projeto são de lincenças livres conforme <a href="https://www.pexels.com/pt-br/" target="_external" rel="external"><em>Pexels</em></a></p>
+  <p>• <a href="https://github.com/carvalhoandre/store-backend" target="_external" rel="external">API</a></p>
 </a> 
 
 ### :blush: Autor
@@ -97,4 +101,4 @@ Feito com ❤️ por *André Carvalho* 👋🏽 Entre em contato!
 
 
 #
-_Referência: [Professor Nelio Alves](https://www.udemy.com/user/nelio-alves/)_
+
