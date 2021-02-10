@@ -10,7 +10,7 @@
   <form [formGroup]="formGroup" (ngSubmit)="signupUser(); $event.preventDefault()">
     <ion-list radio-group formControlName="tipo">
       <ion-list-header class="title">
-        
+
       </ion-list-header>
       <ion-item>
         <ion-label class="option">Pessoa física</ion-label>
@@ -40,7 +40,7 @@
     <ion-item>
       <ion-label stacked>Senha*</ion-label>
       <ion-input formControlName="senha" type="password"></ion-input>
-    </ion-item> 
+    </ion-item>
     <p class="danger" *ngIf="formGroup.controls.senha.dirty && formGroup.controls.senha.errors" margin-left>min 8 caracteres</p>
 
     <ion-label class="title"><strong>Onde podemos realizar suas entregas</strong><img  src="assets/imgs/address.png" alt="logo"></ion-label>
@@ -79,7 +79,7 @@
         <ion-option *ngFor="let cidade of cidades" [value]="cidade.id">{{cidade.nome}}</ion-option>
       </ion-select>
     </ion-item>
-    
+
     <ion-label class="title"><strong>Informções de contato</strong> <img src="assets/imgs/contact.png" alt="logo"></ion-label>
     <ion-item>
       <ion-label stacked>Celular*</ion-label>
@@ -97,6 +97,7 @@
     <ion-fab  right edge>
       <button button color="dark" type="submit" [disabled]="formGroup.invalid" ion-fab mini><ion-icon name="ios-person-add"></ion-icon></button>
      </ion-fab>
-  </form>
-  <p class="store">Store</p>
+    </form>
+    <a href="https://acstore.netlify.app/terms">Termos de responsabilidade</a>
+  <p class="store">ACStore</p>
 </ion-content>
