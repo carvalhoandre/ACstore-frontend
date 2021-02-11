@@ -3,7 +3,7 @@
 
 <p align="center">AC Store modelo de negócio para que pequenos empreendedores tenham a própria loja online</p>
 
-<p align="center">
+<p align="center" name="sumario">
  •<a href="#recursos">Recursos</a>
  •<a href="#requisitos">Pré-requisitos e como rodar a aplicação/testes</a>
  •<a href="#tecnologias">Tecnologias utilizadas</a> 
@@ -25,14 +25,14 @@
       <p>:black_square_button: Publicação do app na Play Store</p>
 </a>
 
-<a href="https://acstore.netlify.app/" target="_external"><img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner4.png" alt="banner2"></a>
+<a href="https://acstore.netlify.app/" target="_new"><img src="https://carvalhoandre.s3-sa-east-1.amazonaws.com/github/banner4.png" alt="banner2"></a>
 
 <p align="center">Clique no banner e conheça projeto :point_up_2:</p>
 
 <a name="requisitos">
   <h2>🎲Pré-requisitos</h2>
   <p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:</p>
-  <p>:link:<a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJS</a></p> 
+  <p>:link:<a href="https://nodejs.org/en/" target="_new" rel="external">NodeJS</a></p> 
   <p>Ionic e Cordova, para estes abra seu interpretador de linha de comando e execute:</p>
 </a>
   
@@ -97,8 +97,12 @@ ionic cordova run browser
   
 Feito com ❤️ por *André Carvalho* 👋🏽 Entre em contato!
 
-<a href="mailto:andre_carvalho0@live.com?Subject=Olá André" target="_blank" rel="external"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="e-mail"></a><a href="https://www.facebook.com/AndreCarvalho0" target="_blank" rel="external"><img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" alt="facebook"></a><a href="https://www.linkedin.com/in/andr%C3%A9-leite-carvalho-b77721146/" target="_blank" rel="external"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
+<a href="mailto:andre_carvalho0@live.com?Subject=Olá André" target="_blank" rel="external"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="e-mail"></a><a href="https://www.facebook.com/AndreCarvalho0" target="_new" rel="external"><img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" alt="facebook"></a><a href="https://www.linkedin.com/in/andr%C3%A9-leite-carvalho-b77721146/" target="_new" rel="external"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
 
-
+<p align="center" name="sumario">
+ •<a href="#sumario">Início</a>
+</p>
 #
+
+
 
