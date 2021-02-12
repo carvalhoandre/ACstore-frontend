@@ -11,17 +11,17 @@ import { StorageService } from "../storage.service";
 export class ClienteService {
 
     constructor(
-        public http: HttpClient, 
+        public http: HttpClient,
         public storage: StorageService,
-        public imageUtilService: ImageUtilService){
-    }
-
-    findByEmail(email : string) {
-        return this.http.get(`${API_CONFIG.baseUrl}/clientes/email?value=${email}`);
+        public imageUtilService: ImageUtilService) {
     }
 
     findById(id: string) {
         return this.http.get(`${API_CONFIG.baseUrl}/clientes/${id}`);
+    }
+
+    findByEmail(email: string) {
+        return this.http.get(`${API_CONFIG.baseUrl}/clientes/email?value=${email}`);
     }
 
     getImageFromBucket(id : string) : Observable<any> {
@@ -45,12 +45,12 @@ export class ClienteService {
         let formData : FormData = new FormData();
         formData.set('file', pictureBlob, 'file.png');
         return this.http.post(
-            `${API_CONFIG.baseUrl}/clientes/picture`, 
+            `${API_CONFIG.baseUrl}/clientes/picture`,
             formData,
-            { 
-                observe: 'response', 
+            {
+                observe: 'response',
                 responseType: 'text'
             }
-        ); 
+        );
     }
 }
