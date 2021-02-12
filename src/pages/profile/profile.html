@@ -24,9 +24,7 @@
     <button color="dark" (click)="getCameraPicture()" [disabled]="cameraOn" ion-fab mini><ion-icon name="ios-videocam-outline"></ion-icon></button>
   </ion-fab>
 
-  <ion-fab bottom right>
-    <button *ngIf=picture color="secondary" (click)="sendPicture()" ion-fab mini><ion-icon name="ios-done-all"></ion-icon></button>
-  </ion-fab>
+ <button *ngIf="picture" ion-button outline block (click)="sendPicture()">Enviar imagem</button>
 
   <ion-fab bottom edg>
     <button *ngIf=picture color="danger" (click)="cancel()" ion-fab mini><ion-icon name="ios-undo-outline"></ion-icon></button>
